@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+    
+</head>
+<body>
+    <div class="khung">
+        <div class="menu">
+            
+                <!-- <div class="cart-icon" onclick="toggleCart()">
+                    <img src="img/cart-logo.png" alt="Cart">
+                </div> -->
+        </div>
+        <div class="tt">
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Lattop</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+                <li><a href="#">Máy tính bảng</a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <img id="img" src="img/banner.jpg" alt="" width="1000px" height="500px">
+            <button style="background-color: greenyellow;" onclick="back()">Back</button>
+            <button style="background-color: greenyellow;" onclick="next()">Next</button>
+            <button style="background-color: greenyellow;" onclick="auto()">Auto</button>
+            <button style="background-color: greenyellow;" onclick="pause()">Pause</button>
+          
+        </div>
+        <script>
+            var imgs = ["img/banner.jpg", "img/banner1.png", "img/banner2.png"];
+            var i = 0;
+            var a = document.getElementById("img");
+
+            function next() {
+                if (i == imgs.length - 1) {
+                    i = 0;
+                } else {
+                    i++;
+                }
+                a.src = imgs[i];
+            }
+
+            function back(){
+                if (i > 0) {
+                    i = i - 1;
+                }
+                else{
+                    i = imgs.length -1;
+                }
+
+                a.src =  imgs[i];
+            }
+            
+          
+            let c =0;
+            function auto(){
+               c =  setInterval(next,1000)
+            }
+            
+
+            function pause(){
+                
+                clearInterval(c);
+                 
+            }
+        </script>
+        <h1 style="text-align: center;">ListProducts</h1>
+        <div class="sp">
+            <div class="spban">
+                <div class="tensp">iPhone 13 Pro Max 128GB</div>
+                <img src="img/iphone13.webp" alt="">
+                <div class="gia">
+                    <del style="color: grey;">13.000.000đ</del>
+                    <h3 style="color: red;">9.000.000đ</h3>
+                </div>
+                <div class="nut">
+                    <button onclick="them()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+
+            <div class="spban">
+                <div class="tensp">Iphone 14 Pro Max</div>
+                <img src="img/iphone14.webp" alt="">
+                <div class="gia">
+                    <del style="color: grey;">8.000.000đ</del>
+                    <h3 style="color: red;">6.000.000đ</h3>
+                </div>
+                <div class="nut">
+                    <button onclick="them()">Thêm Vào Giỏ</button>
+                </div>
+            </div>
+
+            <div class="spban">
+                <div class="tensp">Iphone 15 ProMax</div>
+                <img src="img/iphone13.webp" alt="">
+                <div class="gia">
+                    <del style="color: grey;">10.000.000đ</del>
+                    <h3 style="color: red;">9.000.000đ</h3>
+                </div>
+                <div class="nut">
+                    <button onclick="them()" >Thêm Vào Giỏ</button>
+                </div>
+            </div>
+        </div>
+        <div  id="giohang">
+            <h2>Giỏ hàng</h2>
+            <ul id="danhsachgiohang"> </ul>
+           
+        </div>
+        
+    </div>
+</body>
+</html>

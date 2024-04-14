@@ -1,0 +1,144 @@
+.khung{
+    width: 1000px;
+    margin: 0px auto;
+}
+.menu{
+    margin-top: -10px;
+    width: 100%;
+    height: 69px;
+    display: inline-flex;
+    background-color: rgb(105, 156, 24);
+}
+.logoimg>img{
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.tt>ul{
+    margin-top: -50px;
+    margin-left: 250px;
+}
+.tt>ul>li{
+    list-style: none; 
+    display: inline-flex;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.tt>ul>li>a{
+    text-decoration: none;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sldeshow>img{
+    max-width: 100%;
+    margin-right: 10px;
+}
+.sp{
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.spban{
+    width: 300px;
+    /* display: block; */
+    border: 2px solid black;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.spban>img{
+    max-width: 200px;
+    margin-bottom: 10px;
+    
+}
+.tensp{
+   
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 55px;
+}
+/* Hover Sản Phẩm */
+.nut{
+    margin-top: -337px;
+    width: 100%;
+    height: 350px;
+    /* background-color: rgba(12, 157, 92, 0.6); */
+    /* opacity: 0; */
+    transition: 0.6s;
+
+    
+}   
+/* .nut:hover{
+    opacity: 1;
+} */
+.nut>button{
+    width: 250px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 25px;
+    margin-top: 300px;
+    background-color: greenyellow;
+}
+/* gio hang */
+#giohang {
+    margin-right: 160px;
+   
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    position: absolute;
+    margin-bottom: 50px;
+    background-color: greenyellow;
+} 
+
+#giohang>h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#danhsachgiohang {
+    list-style-type: none;
+    padding: 0;
+}
+
+#danhsachgiohang>li{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.cart-icon{
+    /* text-align: right; */
+    margin-left: 200px;
+}
+.cart-icon>img{
+    float: right;
+    width: 50px; 
+    height: 50px;
+    margin-top: 10px;
+    margin-right: -740px;
+}
+
+#giohang{
+    position: absolute;
+    top: 0px; /* Điều chỉnh vị trí xuất hiện của giỏ hàng nếu cần */
+    right: 0; /* Điều chỉnh vị trí xuất hiện của giỏ hàng nếu cần */
+    z-index: 1; /* Đảm bảo giỏ hàng hiển thị trên cùng */
+    
+}
+/* .hide{
+    display: none;
+} */
+h3{
+    margin-bottom: 50px;
+    font-size: 23px;
+}
+
+
+
+
